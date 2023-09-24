@@ -1,13 +1,33 @@
-import { createContext } from "react";
+import { createContext, useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Cards from "../Cards/Cards";
-
+import { useInputState } from "../../utilitis/useInputState";
+import swal from "sweetalert";
 export const DataJsonContext = createContext(null);
+
 const BannerAndCard = () => {
   const data = useLoaderData();
+  const inputText = useInputState("");
+  const [searchData, setSearchData] = useState(null);
 
+  // focus useEffect
+  useEffect(() => {
+    const getInput = document.getElementById("textInputType");
+    if (getInput) {
+      getInput.focus();
+    }
+  }, []);
+
+  // handle submit button
   const handleSubmit = (e) => {
     e.preventDefault();
+    const textValue = inputText.value.toLowerCase();
+    const findSearchData = data.filter((item) =>
+      item?.category_name?.toLowerCase()?.includes(textValue)
+    );
+    if (findSearchData) {
+      setSearchData(findSearchData);
+    }
   };
   return (
     <section>
@@ -15,27 +35,30 @@ const BannerAndCard = () => {
         {/* banner div  */}
         <div>
           <div
-            className="hero min-h-[60vh] -mt-7 z-10 "
+            className="hero min-h-[70vh] mt-20 rounded-xl"
             style={{
+              // opacity: 0.1,
+
               backgroundImage:
-                "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
+                "url(https://i.ibb.co/2yRfQFB/Rectangle-4281.png)",
             }}
           >
-            <div className="hero-overlay  bg-opacity-100 bg-white  bg-transparent"></div>
+            <div className="hero-overlay bg-opacity-90 bg-white"></div>
             <div className="hero-content text-center text-neutral-content">
-              <div className="max-w-md">
-                <form onSubmit={handleSubmit}>
+              <div className="max-w-md z-40">
+                <form onSubmit={handleSubmit} className="">
                   <input
                     type="text"
                     name="text"
-                    id="textInput"
+                    id="textInputType"
+                    {...inputText}
                     placeholder="Search here ...."
-                    className="text-black p-3  h-11 rounded-md"
+                    className="text-black p-3  h-11 rounded-md border border-black"
                   />
                   <input
                     type="submit"
                     value="Search"
-                    className="text-white font-bold bg-primary btn hover:bg-primary border-l-0"
+                    className="text-white font-bold bg-primary btn hover:bg-primary border-l-0 "
                   />
                 </form>
               </div>
@@ -47,9 +70,13 @@ const BannerAndCard = () => {
         <div>
           {/* map  */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 my-20">
-            {data.map((dataDetails, index) => (
-              <Cards key={index} dataDetails={dataDetails}></Cards>
-            ))}
+            {searchData
+              ? searchData.map((dataDetails, index) => (
+                  <Cards key={index} dataDetails={dataDetails}></Cards>
+                ))
+              : data.map((dataDetails, index) => (
+                  <Cards key={index} dataDetails={dataDetails}></Cards>
+                ))}
           </div>
         </div>
       </DataJsonContext.Provider>

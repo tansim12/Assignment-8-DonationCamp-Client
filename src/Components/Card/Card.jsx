@@ -8,7 +8,7 @@ const Card = () => {
   const data = useLoaderData();
   const [findCardDetails, setFindCardDetails] = useState([]);
   useEffect(() => {
-    const findData = data.find((card) => card?.id.includes(paramsId)) || [];
+    const findData = data.find((card) => card?.id?.includes(paramsId)) || [];
     if (findData) {
       setFindCardDetails(findData);
     }

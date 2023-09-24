@@ -23,7 +23,7 @@ const Statistics = () => {
   const localStorageDataLength =
     (100 / totalData.length) * localStorageData.length.toFixed(2);
   const totalDonationDataLength = 100 - localStorageDataLength.toFixed(2);
-//   console.log(localStorageDataLength, totalDonationDataLength);
+  //   console.log(localStorageDataLength, totalDonationDataLength);
 
   const data = [
     {
