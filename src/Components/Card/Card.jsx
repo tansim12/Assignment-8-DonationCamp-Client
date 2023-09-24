@@ -1,17 +1,25 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { setItemCart } from "../../utilitis/localStorage";
+import swal from "sweetalert";
 
 const Card = () => {
-  const { id } = useParams();
+  const { paramsId } = useParams();
   const data = useLoaderData();
   const [findCardDetails, setFindCardDetails] = useState([]);
   useEffect(() => {
-    const findData = data.find((card) => card?.id.includes(id)) || [];
+    const findData = data.find((card) => card?.id.includes(paramsId)) || [];
     if (findData) {
       setFindCardDetails(findData);
     }
-  }, [data, id]);
-  const { img, category_name, color_text, price, details } = findCardDetails;
+  }, [data, paramsId]);
+  const { img, category_name, color_text, price, details, id } =
+    findCardDetails;
+  // handleDonation handle
+  const handleDonation = (id) => {
+    setItemCart(findCardDetails, id);
+    swal("Good job!", "Thank You For Your Donation", "success");
+  };
   return (
     <div className="my-20">
       <div className="mb-10">
@@ -22,6 +30,7 @@ const Card = () => {
         </div>
 
         <button
+          onClick={() => handleDonation(id)}
           style={{ backgroundColor: `${color_text}` }}
           className="btn btn-sm sm:btn-md text-white font-bold bg-transparent absolute -mt-14 ml-2 sm:ml-8 "
         >
