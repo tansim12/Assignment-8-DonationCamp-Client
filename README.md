@@ -1,8 +1,5 @@
 ## Add at least 3 Project features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- My project is total SPA (Single Page Application) by react .
+- There is main feature  React routeing . Every route difference path name . Rendering dynamic card and card details . Main things donation button clicked by data save the localStorage .
+- Statistics set by BerChart dynamic . Every single moment Donate button click on different card than BarChart is change this time .
