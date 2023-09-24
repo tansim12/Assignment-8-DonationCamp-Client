@@ -1,4 +1,4 @@
-# React + Vite
+## Add at least 3 Project features
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
