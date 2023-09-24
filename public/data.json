@@ -1,0 +1,134 @@
+[
+  {
+    "id": "1",
+    "img": "https://i.ibb.co/ssBg3DT/Health.png",
+    "category_title": "Clean water for children",
+    "category_name": "Health",
+    "details": "Health is a multifaceted concept encompassing physical, mental, and social well-being. It refers to the state of one's body and mind and their ability to function optimally. Maintaining good health involves adopting a balanced diet, regular exercise, adequate rest, and stress management. It also involves seeking medical care when necessary and attending to one's emotional and psychological needs. Prioritizing health is essential for a fulfilling and productive life, as it contributes to longevity and overall quality of life.",
+    "price": 290,
+    "color_cardBg": "#d9e5ff",
+    "color_categoryBg": "#aec8ff",
+    "color_text": "#0052FF"
+  },
+  {
+    "id": "2",
+    "img": "https://i.ibb.co/QYkPD4G/Education.png",
+    "category_title": "Good education",
+    "category_name": "Education",
+    "": "Education is the key to knowledge and personal development. It encompasses formal learning in schools and universities as well as informal learning throughout life. Education equips individuals with essential skills, knowledge, and critical thinking abilities, enabling them to contribute to society and pursue their goals. It empowers people to adapt to a rapidly changing world, fostering personal growth and societal progress. A strong education system is fundamental to building a brighter future for individuals and communities.",
+    "price": 290,
+    "color_cardBg": "#ffe3e4",
+    "color_categoryBg": "#ffc3c5",
+    "color_text": "#FF444A"
+  },
+  {
+    "id": "3",
+    "img": "https://i.ibb.co/9WC8ygY/Clothing.png",
+    "category_title": "Used Clothing Drive",
+    "category_name": "Clothing",
+    "details": "Clothing is a fundamental aspect of human culture and self-expression. It encompasses a wide range of garments and accessories designed for protection, comfort, and style. Clothing choices can reflect cultural, social, and personal identity. From casual wear to formal attire, fashion trends continuously evolve, offering individuals the opportunity to express their unique personalities. Quality clothing serves both functional and aesthetic purposes, enhancing confidence and comfort in everyday life.",
+    "price": 290,
+    "color_cardBg": "#ebf6e2",
+    "color_categoryBg": "#d4ecc1",
+    "color_text": "#79C23F"
+  },
+  {
+    "id": "4",
+    "img": "https://i.ibb.co/qm9cM9M/Food.png",
+    "category_title": "Better Food for Everyone",
+    "category_name": "Food",
+    "details": "Food is a vital source of nourishment and pleasure for people worldwide. It encompasses a diverse array of edible items, from fruits and vegetables to grains, proteins, and indulgent treats. Beyond sustenance, food plays a crucial role in cultural traditions, social gatherings, and personal enjoyment. Exploring different cuisines allows individuals to appreciate global diversity while promoting well-being through balanced and nutritious choices. The culinary world continually evolves, offering endless opportunities for culinary creativity and enjoyment.",
+    "price": 290,
+    "color_cardBg": "#feeae3",
+    "color_categoryBg": "#fdd2c4",
+    "color_text": "#F87147"
+  },
+  {
+    "id": "5",
+    "img": "https://i.ibb.co/qm9cM9M/Food.png",
+    "category_title": "Better Food for Everyone",
+    "category_name": "Food",
+    "details": "Food is a vital source of nourishment and pleasure for people worldwide. It encompasses a diverse array of edible items, from fruits and vegetables to grains, proteins, and indulgent treats. Beyond sustenance, food plays a crucial role in cultural traditions, social gatherings, and personal enjoyment. Exploring different cuisines allows individuals to appreciate global diversity while promoting well-being through balanced and nutritious choices. The culinary world continually evolves, offering endless opportunities for culinary creativity and enjoyment.",
+    "price": 290,
+    "color_cardBg": "#feeae3",
+    "color_categoryBg": "#fdd2c4",
+    "color_text": "#F87147"
+  },
+  {
+    "id": "6",
+    "img": "https://i.ibb.co/9WC8ygY/Clothing.png",
+    "category_title": "Used Clothing Drive",
+    "category_name": "Clothing",
+    "details": "Clothing is a fundamental aspect of human culture and self-expression. It encompasses a wide range of garments and accessories designed for protection, comfort, and style. Clothing choices can reflect cultural, social, and personal identity. From casual wear to formal attire, fashion trends continuously evolve, offering individuals the opportunity to express their unique personalities. Quality clothing serves both functional and aesthetic purposes, enhancing confidence and comfort in everyday life.",
+    "price": 290,
+    "color_cardBg": "#ebf6e2",
+    "color_categoryBg": "#d4ecc1",
+    "color_text": "#79C23F"
+  },
+  {
+    "id": "7",
+    "img": "https://i.ibb.co/QYkPD4G/Education.png",
+    "category_title": "Good education",
+    "category_name": "Education",
+    "details": "Education is the key to knowledge and personal development. It encompasses formal learning in schools and universities as well as informal learning throughout life. Education equips individuals with essential skills, knowledge, and critical thinking abilities, enabling them to contribute to society and pursue their goals. It empowers people to adapt to a rapidly changing world, fostering personal growth and societal progress. A strong education system is fundamental to building a brighter future for individuals and communities.",
+    "price": 290,
+    "color_cardBg": "#ffe3e4",
+    "color_categoryBg": "#ffc3c5",
+    "color_text": "#FF444A"
+  },
+  {
+    "id": "8",
+    "img": "https://i.ibb.co/ssBg3DT/Health.png",
+    "category_title": "Clean water for children",
+    "category_name": "Health",
+    "details": "Health is a multifaceted concept encompassing physical, mental, and social well-being. It refers to the state of one's body and mind and their ability to function optimally. Maintaining good health involves adopting a balanced diet, regular exercise, adequate rest, and stress management. It also involves seeking medical care when necessary and attending to one's emotional and psychological needs. Prioritizing health is essential for a fulfilling and productive life, as it contributes to longevity and overall quality of life.",
+    "price": 290,
+    "color_cardBg": "#d9e5ff",
+    "color_categoryBg": "#aec8ff",
+    "color_text": "#0052FF"
+  },
+  {
+    "id": "9",
+    "img": "https://i.ibb.co/ssBg3DT/Health.png",
+    "category_title": "Clean water for children",
+    "category_name": "Health",
+    "details": "Health is a multifaceted concept encompassing physical, mental, and social well-being. It refers to the state of one's body and mind and their ability to function optimally. Maintaining good health involves adopting a balanced diet, regular exercise, adequate rest, and stress management. It also involves seeking medical care when necessary and attending to one's emotional and psychological needs. Prioritizing health is essential for a fulfilling and productive life, as it contributes to longevity and overall quality of life.",
+    "price": 290,
+    "color_cardBg": "#d9e5ff",
+    "color_categoryBg": "#aec8ff",
+    "color_text": "#0052FF"
+  },
+  {
+    "id": "10",
+    "img": "https://i.ibb.co/QYkPD4G/Education.png",
+    "category_title": "Good education",
+    "category_name": "Education",
+    "details": "Education is the key to knowledge and personal development. It encompasses formal learning in schools and universities as well as informal learning throughout life. Education equips individuals with essential skills, knowledge, and critical thinking abilities, enabling them to contribute to society and pursue their goals. It empowers people to adapt to a rapidly changing world, fostering personal growth and societal progress. A strong education system is fundamental to building a brighter future for individuals and communities.",
+    "price": 290,
+    "color_cardBg": "#ffe3e4",
+    "color_categoryBg": "#ffc3c5",
+    "color_text": "#FF444A"
+  },
+  {
+    "id": "11",
+    "img": "https://i.ibb.co/9WC8ygY/Clothing.png",
+    "category_title": "Used Clothing Drive",
+    "category_name": "Clothing",
+    "details": "Clothing is a fundamental aspect of human culture and self-expression. It encompasses a wide range of garments and accessories designed for protection, comfort, and style. Clothing choices can reflect cultural, social, and personal identity. From casual wear to formal attire, fashion trends continuously evolve, offering individuals the opportunity to express their unique personalities. Quality clothing serves both functional and aesthetic purposes, enhancing confidence and comfort in everyday life.",
+    "price": 290,
+    "color_cardBg": "#ebf6e2",
+    "color_categoryBg": "#d4ecc1",
+    "color_text": "#79C23F"
+  },
+  {
+    "id": "12",
+    "img": "https://i.ibb.co/qm9cM9M/Food.png",
+    "category_title": "Better Food for Everyone",
+    "category_name": "Food",
+    "details": "Food is a vital source of nourishment and pleasure for people worldwide. It encompasses a diverse array of edible items, from fruits and vegetables to grains, proteins, and indulgent treats. Beyond sustenance, food plays a crucial role in cultural traditions, social gatherings, and personal enjoyment. Exploring different cuisines allows individuals to appreciate global diversity while promoting well-being through balanced and nutritious choices. The culinary world continually evolves, offering endless opportunities for culinary creativity and enjoyment.",
+    "price": 290,
+    "color_cardBg": "#feeae3",
+    "color_categoryBg": "#fdd2c4",
+    "color_text": "#F87147"
+  }
+]

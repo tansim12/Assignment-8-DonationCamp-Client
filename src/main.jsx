@@ -5,18 +5,43 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Error from "./Pages/Error";
 import Home from "./Pages/Home";
+import Donation from "./Pages/Donation";
+import Statistics from "./Pages/Statistics";
+import Card from "./Components/Card/Card";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
-    errorElement:<Error></Error>,
-    children:[
+    errorElement: <Error></Error>,
+    children: [
       {
-        path:"/",
-        element:<Home></Home>
+        path: "/",
+        element: <Home></Home>,
+        loader: async () => {
+          const res = await fetch("/data.json");
+          const data = await res.json();
+          return data;
+        },
       },
-    ]
+      {
+        path: "/card/:id",
+        element: <Card></Card>,
+        loader: async () => {
+          const res = await fetch("/data.json");
+          const data = await res.json();
+          return data;
+        },
+      },
+      {
+        path: "/donation",
+        element: <Donation></Donation>,
+      },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>,
+      },
+    ],
   },
 ]);
 
