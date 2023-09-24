@@ -11,25 +11,38 @@ const Card = () => {
       setFindCardDetails(findData);
     }
   }, [data, id]);
-  const {
-    img,
-    category_title,
-    category_name,
-    color_cardBg,
-    color_categoryBg,
-    color_text,
-    details,
-  } = findCardDetails;
+  const { img, category_name, color_text, price, details } = findCardDetails;
   return (
     <div className="my-20">
       <div className="mb-10">
-        <img className="w-full" src={img} alt="" />
+        {/* img and overlay div  */}
+        <div>
+          <img className="w-full" src={img} alt={category_name} />
+          <div className="h-16 z-40 opacity-40  -mt-16 w-full bg-black"></div>
+        </div>
+
+        <button
+          style={{ backgroundColor: `${color_text}` }}
+          className="btn btn-sm sm:btn-md text-white font-bold bg-transparent absolute -mt-14 ml-2 sm:ml-8 "
+        >
+          Donate ${price}
+        </button>
+
+        {/* button  div */}
+        {/* <div className="pl-2 sm:pl-4 -mt-14 z-10">
+          <button
+            style={{ backgroundColor: `${color_text}` }}
+            className="btn btn-sm sm:btn-md text-white font-bold bg-transparent "
+          >
+            Donate ${price}
+          </button>
+        </div> */}
       </div>
       <p
         className="text-3xl
        sm:text-4xl md:text-5xl font-bold"
       >
-        {category_name} {" "}
+        {category_name}{" "}
       </p>
       <p className="text-sm my-4">{details}</p>
     </div>
