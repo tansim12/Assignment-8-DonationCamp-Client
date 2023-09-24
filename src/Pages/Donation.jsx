@@ -20,6 +20,13 @@ const Donation = () => {
 
   return (
     <section className="my-20 ">
+      {/* donation added message  */}
+      {localStorageCard.length <= 0 && (
+        <h1 className="text-center text-3xl sm:text-4xl  lg:text-6xl font-bold ">
+          You have no <span className="text-primary">Donation</span>{" "}
+        </h1>
+      )}
+
       {/* delete all button  */}
       <div className="text-center my-5 ">
         {localStorageCard.length > 0 ? (
