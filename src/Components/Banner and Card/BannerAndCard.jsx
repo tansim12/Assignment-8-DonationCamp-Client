@@ -2,7 +2,6 @@ import { createContext, useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Cards from "../Cards/Cards";
 import { useInputState } from "../../utilitis/useInputState";
-import swal from "sweetalert";
 export const DataJsonContext = createContext(null);
 
 const BannerAndCard = () => {

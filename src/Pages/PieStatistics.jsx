@@ -1,5 +1,5 @@
 import React from "react";
-import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer  , Tooltip} from "recharts";
 import { useLoaderData } from "react-router-dom";
 import { getStoredCard } from "../utilitis/localStorage";
 
@@ -61,6 +61,7 @@ const PieStatistics = () => {
             outerRadius={80}
             fill="#8884d8"
             dataKey="value"
+            
           >
             {chartData.map((entry, index) => (
               <Cell
@@ -69,6 +70,7 @@ const PieStatistics = () => {
               />
             ))}
           </Pie>
+          <Tooltip></Tooltip>
         </PieChart>
       </ResponsiveContainer>
 

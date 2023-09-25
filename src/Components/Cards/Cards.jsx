@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 const Cards = ({ dataDetails }) => {
   const navigate = useNavigate();
-  const handleCard = (id) => navigate(`/card/${id}`);
+
   const {
     id,
     img,
@@ -12,6 +12,8 @@ const Cards = ({ dataDetails }) => {
     color_categoryBg,
     color_text,
   } = dataDetails;
+  const handleCard = (id) =>
+    navigate(`/card/${id}`, { state: { category_name } });
   return (
     <section
       style={{ backgroundColor: `${color_cardBg}` }}
