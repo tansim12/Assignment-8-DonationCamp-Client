@@ -6,7 +6,7 @@ import Loader from "../Components/Loader Spinner/Loader";
 const Layout = () => {
   const navigation = useNavigation();
   return (
-    <section className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-12 py-5 my-5 ">
+    <section className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-12 py-5 my-5  ">
       <div className="">
         <Navbar></Navbar>
       </div>

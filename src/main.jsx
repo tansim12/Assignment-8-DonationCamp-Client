@@ -6,8 +6,9 @@ import Layout from "./Layout/Layout";
 import Error from "./Pages/Error";
 import Home from "./Pages/Home";
 import Donation from "./Pages/Donation";
-import Statistics from "./Pages/Statistics";
+// import Statistics from "./Pages/Statistics";
 import Card from "./Components/Card/Card";
+import PieStatistics from "./Pages/PieStatistics";
 
 const router = createBrowserRouter([
   {
@@ -39,7 +40,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/statistics",
-        element: <Statistics></Statistics>,
+        // element: <Statistics></Statistics>,
+        element:<PieStatistics></PieStatistics>,
         loader: async () => {
           const res = await fetch("/data.json");
           const data = await res.json();
