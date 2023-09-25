@@ -41,11 +41,13 @@ const BannerAndCard = () => {
               backgroundImage:
                 "url(https://i.ibb.co/2yRfQFB/Rectangle-4281.png)",
             }}
-          >
-            <div className="hero-overlay bg-opacity-90 bg-white"></div>
-            <div className="hero-content text-center text-neutral-content">
-              <div className="max-w-md z-40">
-                <form onSubmit={handleSubmit} className="">
+          >  
+            <div className="hero-overlay bg-opacity-90 bg-white "></div>
+            
+            <div className="hero-content text-center z-50">
+              <div className="max-w-md ">
+                <form onSubmit={handleSubmit} className=" w-full">
+                  <h1 className="text-xl  sm:text-3xl font-extrabold mb-4">I Grow By Helping People In Need</h1>
                   <input
                     type="text"
                     name="text"
@@ -63,6 +65,7 @@ const BannerAndCard = () => {
               </div>
             </div>
           </div>
+          
         </div>
 
         {/* card section  */}
